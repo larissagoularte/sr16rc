@@ -9,7 +9,7 @@ const importAll = (r) => {
   return r.keys().map(r);
 };
 
-const images = importAll(require.context('../assets/images', false, /\.(jpeg)$/));
+const images = importAll(require.context('../assets/images', false, /\.(jpg)$/));
 const videos = importAll(require.context('../assets/videos', false, /\.(mp4)$/));
 
 const mediaFiles = [...images, ...videos];
@@ -119,20 +119,20 @@ const Anuncio = () => {
 
             <div className="flex flex-col gap-1">
             <div>
-              <h1 className="TITULO text-xl text-gray-900">T1 - Travessa Santa Maria </h1>
-              <h1 className="TITULO text-xl text-gray-900">(Ref. SMRC)</h1>
+              <h1 className="TITULO text-xl text-gray-900">T0 - Largo Sra do Rosário - RC</h1>
+              <h1 className="TITULO text-xl text-gray-900">(Ref. SR16RC)</h1>
              
             </div>
             <div className="mt-1 mb-2">
-              <a href='https://maps.app.goo.gl/yg7G9JN9rEdCBZUk6'target='_blank' rel="noreferrer" className="text-red-600 underline flex gap-1">
+              <a href='https://maps.app.goo.gl/A5iGkAdTc8qybr5B9'target='_blank' rel="noreferrer" className="text-red-600 underline flex gap-1">
                 <FaLocationDot />
-                <div className="LOCALIZACAO-LINK text-sm">Travessa Santa Maria, Covilhã</div>
+                <div className="LOCALIZACAO-LINK text-sm">Largo Senhora do Rosário, Covilhã</div>
               </a>
             </div>
             </div>
 
             <div>
-            <h2 className="VALOR-RENDA font-bold text-2xl mb-2 text-gray-900">450€</h2>
+            <h2 className="VALOR-RENDA font-bold text-2xl mb-2 text-gray-900">395€</h2>
             </div>
           </div>
 
@@ -143,7 +143,7 @@ const Anuncio = () => {
             </div>
             
             <div className="uppercase inline-block py-1 px-2 rounded bg-red-400 text-white text-xs font-medium tracking-widest">
-              T1
+              T0
             </div>
             
             
@@ -166,9 +166,11 @@ const Anuncio = () => {
             <p className="text-gray-900 font-normal text-wrap">
               A 500 metros do polo I, a 400 metros da Câmara Municipal.
               <br />
-              Wifi de cortesia e limpeza quinzenal de manutenção
+              Wifi de cortesia e limpeza quinzenal de manutenção.
               <br />
               <p className="text-sm font-semibold mt-1">*Visitas mediante marcação.</p>
+              <br />
+              Formulário para agendamento de visita: https://forms.gle/vCsoi5feXevVEQ2k8
               </p>
           </div>
 
@@ -202,11 +204,11 @@ const Anuncio = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-1 items-end">
-                  <div className="font-bold text-gray-900 mb-1">T1</div>
+                  <div className="font-bold text-gray-900 mb-1">T0</div>
                   <div className="font-bold  text-gray-900 mb-1">Não incluidas</div>
                   <div className="font-bold text-gray-900 mb-1">Não Permitido</div>
                   <div className="font-bold text-gray-900 mb-1">2 pessoas</div>
-                  <div className="font-bold text-gray-900 mb-1">01/07/2024</div>
+                  <div className="font-bold text-gray-900 mb-1">Entrada imediata</div>
                 </div>
               </div>
               
@@ -229,14 +231,13 @@ const Anuncio = () => {
               </div>
                 <div className="flex gap-2 mt-2">
                 <div className="text-sm font-bold uppercase">Prazo:</div>
-                <div className="text-sm">Até 31 de agosto de 2025</div>
+                <div className="text-sm">Até 31 de agosto de 2024</div>
                 </div>
               </div>
 
               <div className="mt-1 flex flex-col px-4">
                 <ul className="list-disc text-sm">
                   <li>Contrato renovável por períodos de 12 meses.</li>
-                  <li>Caso não tenha fiador é possível prosseguir com o arrendamento no entanto necessitamos de mais garantias.</li>
                   <li>Não se efectuam reservas para data futura.</li>
                   <li>Apartamento só se considera reservado após pagamento da caução.</li>
                 </ul>                 
